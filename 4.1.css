@@ -1,0 +1,86 @@
+/* CSS para el formulario */
+div {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="date"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 60px;
+}
+
+button[type="submit"], button[type="reset"] {
+    background-color: #2E86C1;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button[type="submit"]:hover, button[type="reset"]:hover {
+    background-color: #3498DB;
+}
+
+/* Validaciones para el formulario */
+input[type="text"]:required {
+    border-color: #E74C3C;
+}
+
+input[type="text"]:valid {
+    border-color: #2ECC71;
+}
+
+/* CSS para navegadores diferentes */
+/* Google Chrome */
+input::-webkit-input-placeholder {
+    color: black;
+}
+
+/* Firefox */
+input::-moz-placeholder {
+    color: gray;
+}
+
+/* Internet Explorer */
+input:-ms-input-placeholder {
+    color: #252525;
+}
